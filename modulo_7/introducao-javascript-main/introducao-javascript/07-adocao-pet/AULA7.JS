@@ -1,0 +1,13 @@
+//|Combinando booleano e ternário
+
+const nomePet ="chico";
+const vacinado = true;
+const castrado = true;
+const idadeMeses =8;
+const podeAdotar= vacinado && castrado && idadeMeses>=2;
+const mensagem = podeAdotar
+?`${nomePet} está pronto para adocão!`
+:`${nomePet} ainda precisa de cuidados antes da adoção`+
+
+console.log(mensagem);
+document.getElementById("resultado").textContent = mensagem;
